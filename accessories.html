@@ -124,7 +124,7 @@
       <div id="footer">
         <div>
           <h2 class="secondary-clr">Latest Tweets</h2>
-          <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="#!"><i class="fa fa-twitter fa-lg"></i></a>
           <p>
             Sand, Salt and Sun. A recipe for a perfect day 🏝 #WednesdayVibes
             #SaltLife #salty #beach #ocean #sun #WednesdayMotivation #fishing
@@ -143,15 +143,17 @@
         </div>
 
         <div>
-          <h2 class="secondary-clr">Join Us</h2>
-          <label for="email_input">Enter your email address:</label>
-          <input
-            type="email"
-            name="email"
-            id="email-input"
-            placeholder="Example@gmail.com"
-          />
-          <a href="#" class="primary-btn">Submit</a>
+          <form name="contact" method="POST" data-netlify="true">
+            <h2 class="secondary-clr">Join Us</h2>
+            <label for="email_input">Enter your email address:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="Example@gmail.com"
+            />
+            <a href="#" class="primary-btn">Submit</a>
+          </form>
         </div>
       </div>
     </footer>
