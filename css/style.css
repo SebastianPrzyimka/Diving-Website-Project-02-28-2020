@@ -1,0 +1,789 @@
+:root {
+  --white-color: #fff;
+  --light-color: #478ac4;
+  --dark-color: #000;
+  --darkgr-color: #333;
+  --secondary-color: #ffea00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p a {
+  font-size: 2rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3.1rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+/* Utlity classes*/
+
+.primary-btn {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  margin-top: 1rem;
+  color: var(--darkgr-color);
+}
+
+.primary-btn:hover {
+  background-color: #ffc000;
+}
+
+.secondary-btn {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  margin-top: 1rem;
+  color: var(--white-color);
+}
+
+.secondary-btn:hover {
+  background-color: #ffc000;
+}
+
+.fa {
+  color: white;
+  padding: 0.25rem;
+}
+
+.fa-instagram:hover {
+  color: #3f729b;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.container {
+  max-width: 1380px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.light-clr {
+  color: var(--light-color);
+}
+
+.darkgr-clr {
+  color: var(--darkgr-color);
+}
+
+.secondary-clr {
+  color: var(--secondary-color);
+}
+
+.y-1 {
+  padding: 0.5rem 0;
+}
+
+.y-2 {
+  padding: 1rem 0;
+}
+
+.y-3 {
+  padding: 4rem 0;
+}
+
+.py-1 {
+  padding: 0.5rem;
+}
+
+.py-2 {
+  padding: 1rem;
+}
+
+.py-3 {
+  padding: 1.5rem;
+}
+
+/*navbar*/
+.logo {
+  width: 230px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+}
+
+.nav-links li {
+  padding: 1rem;
+  padding-bottom: 2rem;
+  height: 3.5rem;
+  align-self: center;
+  background-color: #333;
+}
+
+button:hover ul li {
+  display: block;
+}
+
+.nav-links a,
+.nav-links button {
+  letter-spacing: 1px;
+  padding: 10px 15px;
+}
+
+.nav-link a:last-child {
+  padding-right: 0px;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+.btn:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.nav-links button:focus {
+  outline: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+/*dropdown navbar*/
+nav button {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.courses,
+.shop {
+  position: relative;
+}
+
+.courses ul,
+.shop ul {
+  position: absolute;
+  width: 200px;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 100;
+}
+
+.courses ul {
+  margin-left: -50px;
+}
+
+.shop ul {
+  margin-left: -40px;
+}
+
+.courses li,
+.shop li {
+  width: 100%;
+  height: 100%;
+}
+.courses button:focus + ul,
+.shop button:focus + ul {
+  visibility: visible;
+  pointer-events: all;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* showcase */
+.slide-content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 8rem;
+}
+
+#slider .wrap .slide-content {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+  color: #fff;
+}
+
+.wrap p {
+  font-size: 2rem;
+}
+
+.wrap h1 {
+  animation: animate 0.4s forwards ease-out;
+}
+
+.wrap p {
+  animation: animate 0.5s forwards ease-out;
+}
+
+.wrap .primary-btn {
+  animation: animate 0.6s forwards ease-out;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url('../img/divers.jpg');
+}
+.slide2 {
+  background-image: url('../img/divers-1.jpg');
+}
+.slide3 {
+  background-image: url('../img/divers-2.jpg');
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  width: 0;
+  height: 0;
+}
+
+#arrow-left {
+  background-color: var(--light-color);
+  left: 0;
+  margin-left: 2rem;
+}
+
+#arrow-right {
+  background-color: var(--light-color);
+  right: 0;
+  margin-right: 4rem;
+}
+/* instructors */
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  color: var(--darkgr-color);
+}
+
+.contact-instructors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+/* our instructors */
+
+.bg {
+  padding: 6rem 0;
+}
+
+.our-instructors {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.our-instructors h1 {
+  color: var(--light-color);
+  font-size: 4rem;
+}
+
+.our-instructors img {
+  border-radius: 50% 20%;
+  border: var(--darkgr-color) solid 10px;
+  width: 90%;
+}
+
+button.accordion {
+  width: 100%;
+  border: none;
+  border-bottom: 1px dotted var(--dark-color);
+  text-align: left;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  background: none;
+  padding: 1.6rem;
+  outline: none;
+}
+
+.accordion-content {
+  padding: 0 20px;
+  max-height: 0;
+  text-align: left;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.fa-arrow-circle-right {
+  color: #333;
+}
+
+.acordion-text {
+  font-size: 1.5rem;
+}
+
+/* Rental */
+#rental-section {
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+#rental-section .rental {
+  display: flex;
+  justify-content: space-between;
+}
+
+#rental-section .rental > div {
+  width: 33.333%;
+  flex: 1;
+}
+
+#rental-section .rental h2 {
+  color: var(--light-color);
+}
+
+#rental-section .rental p {
+  font-size: 1.25rem;
+}
+
+#rental-section .rental > div {
+  padding: 1rem 0 1rem 0;
+}
+
+.tank {
+  width: 23px;
+}
+
+/*equipment*/
+
+#equipment {
+  text-align: center;
+}
+
+.equipment-card {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-self: center;
+  align-self: center;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin: 1rem auto;
+  object-fit: cover;
+}
+
+.box img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  transition: all 0.5s ease-out;
+}
+
+.box:hover::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1.05, 1);
+}
+
+.box:hover::after {
+  transform: scale(1.05);
+}
+
+.box .con-text {
+  position: absolute;
+  bottom: 0;
+  width: 270px;
+  height: 230px;
+  padding: 2rem;
+  display: none;
+  text-align: center;
+}
+
+.box:hover .con-text {
+  display: block;
+  z-index: 2;
+}
+
+.con-text a:hover {
+  color: var(--secondary-color);
+  transition: all 0.5s ease-out;
+  width: 100%;
+  height: 100%;
+}
+/*Courses Introduction*/
+
+#courses-introduction {
+  padding: 2rem 0 2rem 0;
+}
+
+#courses-introduction h1 {
+  color: var(--light-color);
+  text-align: center;
+}
+
+/*newsletter*/
+.newsletter {
+  background: url('../img/owd.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.newsletter h1 {
+  font-size: 4rem;
+  color: var(--light-color);
+}
+
+.newsletter p {
+  font-size: 1.75rem;
+}
+
+.newsletter input {
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.newsletter input::placeholder {
+  color: #fff;
+}
+
+/* Blog */
+#blog {
+  text-align: center;
+}
+
+#blog .blog-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+#blog .blog-section > div {
+  width: 33.33%;
+}
+
+#blog .blog-section .blog-bg a {
+  color: #333;
+}
+
+#blog .blog-section .blog-bg a:hover {
+  color: var(--light-color);
+  transition: ease-in 0.2s;
+}
+
+#blog .blog-section .blog-bg p {
+  color: #c0c0c0;
+}
+
+/*footer*/
+#footer {
+  background-color: var(--darkgr-color);
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  border-right: white solid 1px;
+  padding: 4rem 2rem 4rem 2rem;
+}
+
+#footer > div {
+  width: 33.33%;
+  padding: 1rem;
+}
+
+#footer :nth-child(1) p {
+  padding: 0.5rem 0 0.25rem 0;
+}
+
+#footer :nth-child(2) p {
+  line-height: 1.8;
+}
+
+#footer :nth-child(2) .fa {
+  padding-top: 1rem;
+}
+
+#footer :nth-child(3) {
+  border: none;
+}
+
+#footer :nth-child(3) h2 {
+  padding-bottom: 0.5rem;
+}
+
+#footer input {
+  padding: 0.25rem;
+}
+
+/* all courses */
+
+.owd {
+  background: url('../img/owd1.jpg') no-repeat center center/cover;
+  height: 75vh;
+}
+/*awd course */
+.awd {
+  background: url('../img/awd.jpg') no-repeat center center/cover;
+  height: 75vh;
+}
+/*resc*/
+.resc {
+  background: url('../img/resc.jpg') no-repeat center center/cover;
+  height: 75vh;
+}
+/*dm*/
+.dm {
+  background: url('../img/dm.jpg') no-repeat center center/cover;
+  height: 75vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.content p {
+  max-width: 1110px;
+  font-size: 1.45rem;
+  padding: 1rem;
+}
+
+.content span {
+  color: var(--light-color);
+}
+
+/*equipment section */
+.main-eq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+}
+
+/*wetsuits*/
+#wetsuits {
+  background: url('../img/wetsuit1.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#wetsuits h1 {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+/*swimming aids*/
+#swimmingaids {
+  background: url('../img/aids.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+#swimmingaids h1 {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+
+/*knifes*/
+#knifes {
+  background: url('../img/knife1.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#knifes h1 {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+
+/*cameras*/
+#cameras {
+  background: url('../img/camera1.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#cameras h1 {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+/*masks*/
+#masks {
+  background: url('../img/mask2.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+#masks h1 {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+/*accessories*/
+#accessories {
+  background: url('../img/accessories.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#accessories h1 {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+/*contact form*/
+.bg-form {
+  background: url('../img/owd.jpg') no-repeat center center/cover;
+}
+
+.contact-form {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25em;
+  color: var(--white-color);
+}
+
+.contact-wraper > * {
+  padding: 1rem;
+}
+
+/*form styles*/
+.contact-form-client form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.contact-form-client form p {
+  margin: 0;
+}
+
+.contact-form-client form label {
+  display: block;
+}
+
+.contact-form-client .full {
+  grid-column: 1 / 3;
+}
+
+.contact-form-client form button,
+.contact-form-client form input,
+.contact-form-client form textarea,
+.contact-form-client form select {
+  width: 100%;
+  padding: 1em;
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(-1200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
