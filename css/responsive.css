@@ -88,7 +88,7 @@
   }
 }
 
-@media (min-width: 319px) and (max-width: 320px) {
+@media (min-width: 0px) and (max-width: 320px) {
   nav {
     overflow-x: hidden;
   }
@@ -208,7 +208,7 @@
 }
 
 /* mobile or only mobile */
-@media only screen and (min-width: 413px) and (max-width: 414px) {
+@media only screen and (min-width: 321px) and (max-width: 414px) {
   nav {
     overflow-x: hidden;
   }
