@@ -1,0 +1,589 @@
+/* only small desktops */
+/* tablets */
+/* only small tablets */
+@media only screen and (min-width: 992px) and (max-width: 1180px) {
+}
+
+@media (min-width: 568px) and (max-width: 812px) {
+  nav .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 120vh;
+    top: 1vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    font-size: 1rem;
+    z-index: -20;
+    display: block;
+  }
+  nav .nav-links .courses ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+  }
+
+  nav .nav-links .shop ul {
+    margin-left: 140px;
+  }
+
+  nav .nav-links button,
+  nav .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  nav .nav-links li {
+    padding-bottom: 0.1rem;
+  }
+
+  .nav-links li ul li {
+    display: block;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  nav .burger {
+    display: block;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width: 319px) and (max-width: 320px) {
+  nav {
+    overflow-x: hidden;
+  }
+
+  nav .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    top: 12vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    font-size: 1rem;
+    z-index: -20;
+    display: block;
+  }
+  nav .nav-links .courses ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+
+  nav .nav-links .shop ul {
+    margin-left: 60px;
+  }
+
+  nav .nav-links button,
+  nav .nav-links a {
+    font-size: 1rem;
+  }
+
+  nav .nav-links li {
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-links li ul li {
+    display: block;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  nav .burger {
+    display: block;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+
+  /*newsletter*/
+  article .newsletter h1 {
+    font-size: 3rem;
+  }
+
+  article .newsletter p {
+    font-size: 1.5rem;
+  }
+
+  /*equipment*/
+  #equipment .container .equipment-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #equipment .container .equipment-card .box {
+    height: 230px;
+    width: 230px;
+  }
+
+  #equipment .container .equipment-card .box .con-text {
+    height: 180px;
+    width: 180px;
+  }
+
+  /*instructors*/
+  #contact .contact-instructors {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* mobile or only mobile */
+@media only screen and (min-width: 413px) and (max-width: 414px) {
+  nav {
+    overflow-x: hidden;
+  }
+
+  nav .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 85vh;
+    top: 11vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    font-size: 1rem;
+    z-index: -20;
+    display: block;
+  }
+  nav .nav-links .courses ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+  }
+
+  nav .nav-links .shop ul {
+    margin-left: 110px;
+  }
+
+  .nav-links li ul li {
+    display: block;
+  }
+  nav .nav-links li {
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  nav .burger {
+    display: block;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@media only screen and (min-width: 374px) and (max-width: 375px) {
+  nav {
+    overflow-x: hidden;
+  }
+
+  nav .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 85vh;
+    top: 10vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    font-size: 1rem;
+    z-index: -20;
+    display: block;
+  }
+  nav .nav-links .courses ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+  }
+
+  nav .nav-links .shop ul {
+    margin-left: 90px;
+  }
+  nav .nav-links li {
+    padding-bottom: 0.5rem;
+  }
+  nav .nav-links button,
+  nav .nav-links a {
+    font-size: 1rem;
+  }
+
+  .nav-links li ul li {
+    display: block;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  nav .burger {
+    display: block;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* show case*/
+  .wrap #slider .slide-content {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    height: 100vh;
+  }
+
+  .wrap #arrow-left,
+  .wrap #arrow-right {
+    display: none;
+  }
+
+  .slide-content h1 {
+    font-size: 2.75rem;
+  }
+
+  .wrap span p {
+    font-size: 1.75rem;
+  }
+
+  /*instructors*/
+
+  /*Why our instructors*/
+  .bg .container .our-instructors {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+
+  .bg .container .our-instructors img {
+    display: none;
+  }
+
+  .bg .container .our-instructors h1 {
+    padding-top: 0.5rem;
+    font-size: 2.75rem;
+  }
+
+  .bg .container .our-instructors .accordion-content p {
+    font-size: 1.25rem;
+  }
+
+  /*rental*/
+  #rental-section .container .rental {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #rental-section .container .rental > div {
+    width: 85%;
+  }
+  /*blog*/
+  #blog .container .blog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #blog .container .blog-section > div {
+    width: 95%;
+  }
+
+  /*footer*/
+  footer #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer #footer > div {
+    width: 85%;
+  }
+  /*equipment section */
+  .main-eq {
+    text-align: center;
+  }
+
+  .main-eq img {
+    width: 60%;
+  }
+
+  section .content h1 {
+    font-size: 3rem;
+  }
+
+  section .content p {
+    font-size: 1.5rem;
+  }
+
+  section article #accessories h1 {
+    font-size: 1rem;
+  }
+
+  section article #cameras h1 {
+    font-size: 1rem;
+  }
+
+  section article #knifes h1 {
+    font-size: 3rem;
+  }
+
+  section article #masks h1 {
+    font-size: 3rem;
+  }
+
+  section article #swimmingaids h1 {
+    font-size: 3rem;
+  }
+
+  section article #wetsuits h1 {
+    font-size: 3rem;
+  }
+
+  section article .container {
+    max-width: 330px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+  nav {
+    overflow-x: hidden;
+  }
+
+  nav .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    top: 10vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    font-size: 1rem;
+    z-index: -20;
+    display: block;
+  }
+  nav .nav-links .courses ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+
+  nav .nav-links .shop ul {
+    margin-left: 60px;
+  }
+
+  nav .nav-links button,
+  nav .nav-links a {
+    font-size: 1rem;
+  }
+
+  nav .nav-links li {
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-links li ul li {
+    display: block;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  nav .burger {
+    display: block;
+  }
+
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+}

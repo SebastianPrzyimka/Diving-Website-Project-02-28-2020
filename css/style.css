@@ -103,7 +103,7 @@ p {
 }
 
 .container {
-  max-width: 1380px;
+  max-width: 1400px;
   margin: auto;
   overflow: hidden;
 }
@@ -258,7 +258,6 @@ nav button {
   margin: 5px;
   transition: all 0.3s ease;
 }
-
 /* showcase */
 .slide-content {
   height: 90vh;
