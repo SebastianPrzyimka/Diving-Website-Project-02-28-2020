@@ -190,6 +190,11 @@
     grid-template-columns: 1fr;
   }
 
+  #equipment .container .equipment-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   #equipment .container .equipment-card .box {
     height: 230px;
     width: 230px;
@@ -585,5 +590,27 @@
 
   nav .nav-active {
     transform: translateX(0%);
+  }
+}
+
+@media (min-width: 359px) and (max-width: 360px) {
+  nav .nav-links .courses ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 82px;
+  }
+
+  nav .nav-links .shop ul {
+    margin-left: 82px;
+  }
+
+  #equipment .container .equipment-card .box {
+    height: 200px;
+    width: 230px;
+  }
+
+  #equipment .container .equipment-card .box .con-text {
+    height: 180px;
+    width: 180px;
   }
 }
